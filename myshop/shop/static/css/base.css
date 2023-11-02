@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+:root {
+    --headers-font: 'Montserrat';
+    --paragraphs-font: 'Roboto'; 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
