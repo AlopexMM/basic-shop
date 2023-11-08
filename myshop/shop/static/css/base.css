@@ -8,7 +8,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 10px;
 }
 
 body {
@@ -27,11 +26,12 @@ body {
     font-family: var(--headers-font);
     font-size: 2em;
     margin: 1em;
+    color: black;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: lightseagreen;
 }
 
 #subheader {
@@ -50,4 +50,116 @@ a {
 
 #content {
     display: flex;
+    flex-direction: row;
+}
+
+#sidebar {
+    width: 15%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar > h3 {
+    font-family: var(--headers-font);
+    font-size: 2em;
+}
+
+#sidebar > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar > ul > li {
+    margin: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+#sidebar > ul > li > a {
+    font-size: 1.5em;
+    font-family: var(--paragraphs-font);
+    padding: 1em;
+}
+
+.selected {
+    background-color: lightblue;
+    border-radius: 0.5em;
+}
+
+#selected-category {
+    color: white;
+}
+
+#main {
+    width: 85%;
+}
+
+#main > h1 {
+    font-family: var(--headers-font);
+    font-size: 4em;
+}
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-detail {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    height: 400px;
+}
+
+.image > img {
+    width: 300px;
+}
+
+.product-name {
+    font-family: var(--paragraphs-font);
+    font-size: 2em;
+}
+
+.price {
+    font-family: var(--paragraphs-font);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.product-detail > img {
+    width: 300px;
+}
+
+.product-detail > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.product-detail > div > h1 {
+    font-family: var(--headers-font);
+    font-size: 4em;
+}
+
+.product-detail > div > h2 {
+    font-family: var(--paragraphs-font);
+    font-size: 2em;
+}
+
+.description {
+    font-family: var(--paragraphs-font);
+    font-size: 1.5em;
 }
