@@ -163,3 +163,44 @@ a {
     font-family: var(--paragraphs-font);
     font-size: 1.5em;
 }
+
+.cart-content {
+    margin-left: 1em;
+    width: 100%;
+}
+
+.cart-content > h1 {
+    margin-bottom: 1em;
+    margin-left: 1.5em;
+    margin-top: 1em;
+}
+
+.cart-content > p {
+    font-family: var(--paragraphs-font);
+}
+
+.cart > thead, .total {
+    background: lightblue;
+}
+
+input[type=submit] {
+    font-family: var(--paragraphs-font);
+    background-color: lightblue;
+    border-radius: 0.5em;
+    border: none;
+    height: 2em;
+    width: 6em;
+}
+
+table {
+    border-collapse: collapse;
+    font-family: var(--paragraphs-font);
+}
+
+th, td {
+    padding: 0.5em;
+}
+
+.cart-products {
+    background-color: #C5C5C5;
+}
